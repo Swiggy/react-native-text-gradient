@@ -1,6 +1,6 @@
 {
   "name": "react-native-text-gradient",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Text gradient for React-Native",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iyegoroff/react-native-text-gradient.git"
+    "url": "git+https://github.com/Swiggy/react-native-text-gradient.git"
   },
   "keywords": [
     "react-native",
