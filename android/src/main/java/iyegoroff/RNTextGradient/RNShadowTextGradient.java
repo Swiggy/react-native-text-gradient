@@ -90,19 +90,23 @@ public abstract class RNShadowTextGradient extends ReactTextShadowNode {
   }
 
   private void updateGradient() {
-    if (!isVirtual()) {
-      String fieldName = "mPreparedSpannableText";
-        
-      setParentFieldValue(
-        this,
-        fieldName,
-        spannableWithGradient(
-          (Spannable) getParentFieldValue(this, fieldName),
-          this,
-          getLayoutWidth(),
-          getLayoutHeight()
-        )
-      );  
+
+    try {
+      if (!isVirtual()) {
+        String fieldName = "mPreparedSpannableText";
+
+        setParentFieldValue(
+                this,
+                fieldName,
+                spannableWithGradient(
+                        (Spannable) getParentFieldValue(this, fieldName),
+                        this,
+                        getLayoutWidth(),
+                        getLayoutHeight()
+                )
+        );
+      }
+    }catch (Exception exception){
     }
   }
 
